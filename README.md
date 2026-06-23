@@ -20,7 +20,7 @@ A responsive travel recommendation web application that helps users discover pop
 - JavaScript
 
 ## Live Demo
-https://YOUR_USERNAME.github.io/travel-recommendation-website/
+https://elzharaawy.github.io/travel-recommendation-website/
 
 ## GitHub Repository
-https://github.com/YOUR_USERNAME/travel-recommendation-website
+https://github.com/elzharaawy/travel-recommendation-website
