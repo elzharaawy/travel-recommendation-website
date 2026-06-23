@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About TravelVista - Our story, mission, and the team behind your dream adventures.">
+  <title>About Us | TravelVista</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVBAR
+       ====================================================== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+
+      <a href="index.html" class="nav-logo" aria-label="TravelVista Home">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21 4 19 4s-2 2-3.5 3.5L8 11 .8 9.2l-.8.8 6.8 5.2-2 2L3 17l1 2 2 1 .8-1.8 2-2 5.2 6.8z"/>
+        </svg>
+        <div>
+          Travel<span>Vista</span>
+          <span class="logo-tagline">Explore the world with us</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-search" role="search">
+        <input type="search" id="navSearch" placeholder="Search destinations..." aria-label="Search destinations">
+        <button id="navSearchBtn" aria-label="Search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       PAGE HERO
+       ====================================================== -->
+  <section class="page-hero" aria-label="About us hero">
+    <div class="container">
+      <span class="badge">Our Story</span>
+      <h1>About TravelVista</h1>
+      <p>We're passionate explorers dedicated to helping you discover the world's most extraordinary places.</p>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       COMPANY INTRODUCTION
+       ====================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="about-intro">
+        <img
+          src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=700&q=80"
+          alt="Travelers on a scenic mountain road trip at sunset"
+          loading="lazy"
+        >
+        <div class="about-intro-text">
+          <span class="badge">Who We Are</span>
+          <h2>Born from a Love of Exploration</h2>
+          <p>TravelVista was founded in 2015 by a group of passionate globetrotters who believed that travel is one of life's greatest teachers. What started as a small blog sharing hidden gems around the world has grown into a trusted travel platform used by millions of adventurers.</p>
+          <p>We've curated thousands of destinations — from sun-kissed beaches and ancient temples to vibrant cities and untouched wilderness — so you can spend less time planning and more time experiencing.</p>
+          <p>Every recommendation on TravelVista is personally vetted by our team of seasoned travelers. We don't just list destinations; we share the stories, tips, and insider knowledge that make each trip truly unforgettable.</p>
+          <a href="contact.html" class="btn btn-primary" style="margin-top:8px;">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       MISSION STATEMENT
+       ====================================================== -->
+  <section class="section" style="background: var(--accent-light); padding-top: 72px; padding-bottom: 72px;">
+    <div class="container">
+      <span class="badge" style="display:block; text-align:center; width:fit-content; margin: 0 auto 12px;">Our Purpose</span>
+      <h2 class="section-title">Our Mission</h2>
+      <p class="section-subtitle" style="max-width: 620px; margin: 0 auto 48px;">We believe every person deserves to experience the wonder of our world. Our mission is to make meaningful travel accessible, inspiring, and effortless for everyone.</p>
+
+      <div class="mission-grid">
+
+        <div class="mission-card">
+          <div class="mission-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <h3>Discover the World</h3>
+          <p>We curate extraordinary destinations across every continent, helping you uncover places that match your unique travel style — from off-the-beaten-path villages to iconic world wonders.</p>
+        </div>
+
+        <div class="mission-card">
+          <div class="mission-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <h3>Inspire Adventures</h3>
+          <p>Travel transforms us. We share stories, photography, and first-hand accounts that spark curiosity and motivate you to step outside your comfort zone and embrace new experiences.</p>
+        </div>
+
+        <div class="mission-card">
+          <div class="mission-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3>Build Community</h3>
+          <p>Travel is better shared. We connect like-minded explorers, local experts, and adventure seekers into a vibrant global community that supports and inspires each other.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       WHY CHOOSE US
+       ====================================================== -->
+  <section class="section">
+    <div class="container">
+      <span class="badge" style="display:block; text-align:center; width:fit-content; margin: 0 auto 12px;">Our Edge</span>
+      <h2 class="section-title">Why Choose TravelVista?</h2>
+      <p class="section-subtitle">We're not just another travel site. Here's what sets us apart.</p>
+
+      <div class="why-grid">
+
+        <div class="why-item">
+          <div class="why-number">01</div>
+          <div class="why-content">
+            <h3>Personally Vetted Destinations</h3>
+            <p>Every destination we feature has been visited and reviewed by our travel experts. No paid placements, no inflated reviews — just honest, first-hand recommendations you can trust.</p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">02</div>
+          <div class="why-content">
+            <h3>Tailored for Every Traveler</h3>
+            <p>Whether you're a solo backpacker, a family looking for kid-friendly adventures, or a couple seeking a luxury escape, our curated content speaks to every style and budget.</p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">03</div>
+          <div class="why-content">
+            <h3>Rich Local Insights</h3>
+            <p>Beyond the tourist trail, we go deeper. Our guides include local food spots, cultural etiquette tips, seasonal advice, and hidden gems that only locals know about.</p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">04</div>
+          <div class="why-content">
+            <h3>Responsible Travel First</h3>
+            <p>We champion sustainable travel practices that protect the places we love. Our content highlights eco-conscious options and encourages travelers to leave destinations better than they found them.</p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">05</div>
+          <div class="why-content">
+            <h3>Always Up to Date</h3>
+            <p>Our team continuously refreshes destination guides with the latest travel advisories, visa info, and seasonal tips — so you're never planning with outdated information.</p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">06</div>
+          <div class="why-content">
+            <h3>Dedicated Support</h3>
+            <p>Have questions before you go? Our travel experts are available to help you plan, troubleshoot, and make the most of every journey — before, during, and after your trip.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       STATISTICS BAR
+       ====================================================== -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3><span class="counter" data-target="12000" data-suffix="+">0</span></h3>
+          <p>Destinations Covered</p>
+        </div>
+        <div class="stat-item">
+          <h3><span class="counter" data-target="3500000" data-suffix="+">0</span></h3>
+          <p>Happy Travelers</p>
+        </div>
+        <div class="stat-item">
+          <h3><span class="counter" data-target="195" data-suffix="">0</span></h3>
+          <p>Countries Explored</p>
+        </div>
+        <div class="stat-item">
+          <h3><span class="counter" data-target="10" data-suffix=" Yrs">0</span></h3>
+          <p>Years of Experience</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       TEAM SECTION
+       ====================================================== -->
+  <section class="section">
+    <div class="container">
+      <span class="badge" style="display:block; text-align:center; width:fit-content; margin: 0 auto 12px;">The People</span>
+      <h2 class="section-title">Meet Our Team</h2>
+      <p class="section-subtitle">A passionate crew of explorers, storytellers, and travel obsessives — united by wanderlust.</p>
+
+      <div class="team-grid">
+
+        <article class="team-card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80"
+            alt="Sarah Mitchell, Founder & CEO"
+            loading="lazy"
+          >
+          <div class="team-card-body">
+            <h3>Sarah Mitchell</h3>
+            <p class="role">Founder & CEO</p>
+            <p>With visits to over 90 countries, Sarah turned her lifelong passion for travel into TravelVista. She believes every journey changes you in ways you never expect.</p>
+          </div>
+        </article>
+
+        <article class="team-card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+            alt="James Okafor, Head of Destinations"
+            loading="lazy"
+          >
+          <div class="team-card-body">
+            <h3>James Okafor</h3>
+            <p class="role">Head of Destinations</p>
+            <p>A former National Geographic photographer, James leads our destination curation team. His eye for beauty and culture shapes every recommendation we make.</p>
+          </div>
+        </article>
+
+        <article class="team-card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80"
+            alt="Priya Sharma, Travel Content Lead"
+            loading="lazy"
+          >
+          <div class="team-card-body">
+            <h3>Priya Sharma</h3>
+            <p class="role">Travel Content Lead</p>
+            <p>Priya has written over 500 destination guides and speaks four languages. Her writing brings places to life before you even set foot on the plane.</p>
+          </div>
+        </article>
+
+        <article class="team-card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
+            alt="Marco Fernandez, Sustainability Director"
+            loading="lazy"
+          >
+          <div class="team-card-body">
+            <h3>Marco Fernandez</h3>
+            <p class="role">Sustainability Director</p>
+            <p>Marco ensures every experience we recommend aligns with responsible travel values. He's dedicated to protecting the destinations we love for future generations.</p>
+          </div>
+        </article>
+
+        <article class="team-card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80"
+            alt="Aiko Tanaka, Asia-Pacific Expert"
+            loading="lazy"
+          >
+          <div class="team-card-body">
+            <h3>Aiko Tanaka</h3>
+            <p class="role">Asia-Pacific Expert</p>
+            <p>Born in Kyoto and raised across Southeast Asia, Aiko brings unmatched regional expertise. Her temple and cultural guides are among our most-read content.</p>
+          </div>
+        </article>
+
+        <article class="team-card" tabindex="0">
+          <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80"
+            alt="Daniel Webb, Adventure Travel Specialist"
+            loading="lazy"
+          >
+          <div class="team-card-body">
+            <h3>Daniel Webb</h3>
+            <p class="role">Adventure Travel Specialist</p>
+            <p>From summiting peaks to deep-sea diving, Daniel has done it all. He covers extreme and adventure travel for those who want to push their limits safely.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       CTA BANNER
+       ====================================================== -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to Start Your Adventure?</h2>
+      <p>Join millions of travelers who trust TravelVista to guide their next journey. Your dream destination is just a search away.</p>
+      <a href="index.html" class="btn btn-primary">Explore Destinations</a>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21 4 19 4s-2 2-3.5 3.5L8 11 .8 9.2l-.8.8 6.8 5.2-2 2L3 17l1 2 2 1 .8-1.8 2-2 5.2 6.8z"/>
+            </svg>
+            TravelVista
+          </a>
+          <p>Explore the world with us and make every trip unforgettable. Your adventure starts here.</p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="Twitter">tw</a>
+            <a href="#" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Popular</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#recommendations">Beaches</a></li>
+            <li><a href="index.html#recommendations">Temples</a></li>
+            <li><a href="index.html#recommendations">Countries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <div class="contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@travelvista.com
+          </div>
+          <div class="contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18a2 2 0 0 1 2-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +1 234 567 890
+          </div>
+          <div class="contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Adventure City, World
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TravelVista. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

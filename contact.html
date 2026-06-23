@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact TravelVista - Get in touch with our travel experts.">
+  <title>Contact Us | TravelVista</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVBAR
+       ====================================================== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+
+      <a href="index.html" class="nav-logo" aria-label="TravelVista Home">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21 4 19 4s-2 2-3.5 3.5L8 11 .8 9.2l-.8.8 6.8 5.2-2 2L3 17l1 2 2 1 .8-1.8 2-2 5.2 6.8z"/>
+        </svg>
+        <div>
+          Travel<span>Vista</span>
+          <span class="logo-tagline">Explore the world with us</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-search" role="search">
+        <input type="search" id="navSearch" placeholder="Search destinations..." aria-label="Search destinations">
+        <button id="navSearchBtn" aria-label="Search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       PAGE HERO
+       ====================================================== -->
+  <section class="page-hero" aria-label="Contact page hero">
+    <div class="container">
+      <span class="badge">Reach Out</span>
+      <h1>Contact Us</h1>
+      <p>Questions, ideas, or just want to say hello? Our travel experts are here for you.</p>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       CONTACT MAIN SECTION
+       ====================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- ---- Contact Form ---- -->
+        <div class="contact-form-wrap">
+          <h2>Send Us a Message</h2>
+          <p>Fill in the form and we'll get back to you within 24 hours.</p>
+
+          <form id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name <span style="color:#ef4444">*</span></label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="e.g. Jane Doe"
+                  autocomplete="name"
+                  aria-required="true"
+                  aria-describedby="nameErr"
+                >
+                <span class="error-msg" id="nameErr" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span style="color:#ef4444">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="e.g. jane@example.com"
+                  autocomplete="email"
+                  aria-required="true"
+                  aria-describedby="emailErr"
+                >
+                <span class="error-msg" id="emailErr" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject <span style="color:#ef4444">*</span></label>
+              <select id="subject" name="subject" aria-required="true" aria-describedby="subjectErr">
+                <option value="">Select a subject…</option>
+                <option value="destination">Destination Enquiry</option>
+                <option value="itinerary">Itinerary Planning</option>
+                <option value="partnership">Partnership &amp; Collaboration</option>
+                <option value="feedback">Feedback &amp; Suggestions</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="error-msg" id="subjectErr" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span style="color:#ef4444">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell us how we can help you…"
+                aria-required="true"
+                aria-describedby="msgErr"
+              ></textarea>
+              <span class="error-msg" id="msgErr" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+              Send Message
+            </button>
+
+            <div class="success-banner" id="successBanner" role="alert">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              Thanks! We've received your message and will reply within 24 hours.
+            </div>
+
+          </form>
+        </div>
+
+        <!-- ---- Contact Info ---- -->
+        <div class="contact-info-wrap">
+          <span class="badge">Get in Touch</span>
+          <h2>We'd Love to Hear From You</h2>
+          <p>Whether you have a quick question or need detailed trip planning advice, our team is ready to help you make the most of every adventure.</p>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Email Us</h4>
+              <p>info@travelvista.com</p>
+              <p>support@travelvista.com</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18a2 2 0 0 1 2-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Call Us</h4>
+              <p>+1 234 567 890</p>
+              <p>Mon – Fri, 9 AM – 6 PM (EST)</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Visit Us</h4>
+              <p>42 Explorer Avenue</p>
+              <p>Adventure City, World</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Response Time</h4>
+              <p>We typically reply within 24 hours on business days. For urgent enquiries, please call us directly.</p>
+            </div>
+          </div>
+
+          <!-- FAQ -->
+          <div class="faq-section">
+            <h3>Frequently Asked Questions</h3>
+
+            <details class="faq-item">
+              <summary>Do you offer personalised travel itineraries?</summary>
+              <p>Yes! Our travel experts can help you craft a personalised itinerary tailored to your interests, budget, and travel dates. Just reach out via the contact form and select "Itinerary Planning".</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Are your destination recommendations free?</summary>
+              <p>All of our destination guides, tips, and recommendations are completely free to access on TravelVista. We're supported by affiliate partnerships and display advertising, never by sponsored placements.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>Can I contribute a destination or travel story?</summary>
+              <p>We love hearing from fellow travellers! Send us your story via the contact form with the subject "Partnership & Collaboration" and our editorial team will review it.</p>
+            </details>
+
+            <details class="faq-item">
+              <summary>How often is the travel content updated?</summary>
+              <p>Our team reviews and updates destination content on a rolling basis, with major reviews every six months. We also update immediately when significant travel advisories are issued.</p>
+            </details>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       CTA BANNER
+       ====================================================== -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Not Sure Where to Start?</h2>
+      <p>Browse our handpicked destinations and let inspiration take you somewhere extraordinary.</p>
+      <a href="index.html" class="btn btn-primary">Explore Destinations</a>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21 4 19 4s-2 2-3.5 3.5L8 11 .8 9.2l-.8.8 6.8 5.2-2 2L3 17l1 2 2 1 .8-1.8 2-2 5.2 6.8z"/>
+            </svg>
+            TravelVista
+          </a>
+          <p>Explore the world with us and make every trip unforgettable. Your adventure starts here.</p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="Twitter">tw</a>
+            <a href="#" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Popular</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#recommendations">Beaches</a></li>
+            <li><a href="index.html#recommendations">Temples</a></li>
+            <li><a href="index.html#recommendations">Countries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact</h4>
+          <div class="contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@travelvista.com
+          </div>
+          <div class="contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18a2 2 0 0 1 2-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +1 234 567 890
+          </div>
+          <div class="contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Adventure City, World
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TravelVista. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

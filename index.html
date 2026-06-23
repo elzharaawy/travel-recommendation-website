@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TravelVista - Discover amazing beaches, temples and countries around the world.">
+  <title>TravelVista | Discover Amazing Places</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon via emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVBAR
+       ====================================================== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="TravelVista Home">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21 4 19 4s-2 2-3.5 3.5L8 11 .8 9.2l-.8.8 6.8 5.2-2 2L3 17l1 2 2 1 .8-1.8 2-2 5.2 6.8z"/>
+        </svg>
+        <div>
+          Travel<span>Vista</span>
+          <span class="logo-tagline">Explore the world with us</span>
+        </div>
+      </a>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <!-- Navbar Search -->
+      <div class="nav-search" role="search">
+        <input type="search" id="navSearch" placeholder="Search destinations..." aria-label="Search destinations">
+        <button id="navSearchBtn" aria-label="Search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       HERO SECTION
+       ====================================================== -->
+  <section class="hero" aria-label="Hero banner">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1>Discover Amazing Places</h1>
+      <p>Find the best beaches, temples and countries for your next adventure.</p>
+      <div class="hero-search" role="search">
+        <input
+          type="search"
+          id="heroSearch"
+          placeholder="Search for beaches, temples, countries..."
+          aria-label="Search for destinations"
+        >
+        <button id="heroSearchBtn" aria-label="Search destinations">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          Search
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       SEARCH RESULTS (hidden until search)
+       ====================================================== -->
+  <section class="search-results-section" id="searchResultsSection" aria-live="polite">
+    <div class="container">
+      <h2 class="section-title" id="searchResultsTitle">Search Results</h2>
+      <div class="results-grid" id="resultsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       POPULAR RECOMMENDATIONS
+       ====================================================== -->
+  <section class="section recommendations" id="recommendations">
+    <div class="container">
+      <h2 class="section-title">Popular Recommendations</h2>
+      <p class="section-subtitle">Explore some of our handpicked destinations.</p>
+
+      <div class="reco-grid">
+
+        <!-- Beaches Column -->
+        <div class="reco-column">
+          <div class="reco-column-header">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"/>
+              <polygon points="18 2 22 6 12 16 8 16 8 12 18 2"/>
+            </svg>
+            Beaches
+          </div>
+
+          <!-- Bali Beach Card -->
+          <article class="dest-card" tabindex="0" role="article">
+            <img
+              src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=200&q=80"
+              alt="Bali Beach, Indonesia - Tropical beach with palm trees"
+              loading="lazy"
+              width="88" height="72"
+            >
+            <div class="dest-card-info">
+              <h3>Bali Beach, Indonesia</h3>
+              <p>Relax on the pristine beaches of Bali with crystal clear waters.</p>
+            </div>
+          </article>
+
+          <!-- Maldives Card -->
+          <article class="dest-card" tabindex="0" role="article">
+            <img
+              src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=200&q=80"
+              alt="Maldives - Crystal blue waters with overwater bungalows"
+              loading="lazy"
+              width="88" height="72"
+            >
+            <div class="dest-card-info">
+              <h3>Maldives</h3>
+              <p>Experience the paradise on earth with stunning ocean views.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Temples Column -->
+        <div class="reco-column">
+          <div class="reco-column-header">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+            Temples
+          </div>
+
+          <!-- Wat Phra Kaew Card -->
+          <article class="dest-card" tabindex="0" role="article">
+            <img
+              src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=200&q=80"
+              alt="Wat Phra Kaew, Bangkok Thailand - Temple of the Emerald Buddha"
+              loading="lazy"
+              width="88" height="72"
+            >
+            <div class="dest-card-info">
+              <h3>Wat Phra Kaew, Thailand</h3>
+              <p>The Temple of the Emerald Buddha, Bangkok.</p>
+            </div>
+          </article>
+
+          <!-- Angkor Wat Card -->
+          <article class="dest-card" tabindex="0" role="article">
+            <img
+                src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=200&q=80"
+                alt="Angkor Wat, Cambodia - Ancient temple complex at sunrise"
+                loading="lazy"
+                width="88"
+                height="72"
+            >
+            <div class="dest-card-info">
+                <h3>Angkor Wat, Cambodia</h3>
+                <p>The magnificent temple complex and UNESCO World Heritage Site.</p>
+            </div>
+            </article>
+        </div>
+
+        <!-- Countries Column -->
+        <div class="reco-column">
+          <div class="reco-column-header">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            Countries
+          </div>
+
+          <!-- Switzerland Card -->
+          <article class="dest-card" tabindex="0" role="article">
+            <img
+              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200&q=80"
+              alt="Switzerland - Stunning Alpine mountain lake landscape"
+              loading="lazy"
+              width="88" height="72"
+            >
+            <div class="dest-card-info">
+              <h3>Switzerland</h3>
+              <p>Explore the breathtaking landscapes and charming cities.</p>
+            </div>
+          </article>
+
+          <!-- Japan Card -->
+          <article class="dest-card" tabindex="0" role="article">
+            <img
+              src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=200&q=80"
+              alt="Japan - Mount Fuji with cherry blossom pagoda"
+              loading="lazy"
+              width="88" height="72"
+            >
+            <div class="dest-card-info">
+              <h3>Japan</h3>
+              <p>A perfect blend of tradition, culture and modernity.</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       CTA BANNER
+       ====================================================== -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Your Journey Begins Here</h2>
+      <p>At TravelVista, we help you find the best places to visit around the world. Start exploring and create unforgettable memories!</p>
+      <a href="about.html" class="btn btn-primary">Start Exploring</a>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21 4 19 4s-2 2-3.5 3.5L8 11 .8 9.2l-.8.8 6.8 5.2-2 2L3 17l1 2 2 1 .8-1.8 2-2 5.2 6.8z"/>
+            </svg>
+            TravelVista
+          </a>
+          <p>Explore the world with us and make every trip unforgettable. Your adventure starts here.</p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="Twitter">tw</a>
+            <a href="#" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Popular -->
+        <div>
+          <h4>Popular</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#recommendations">Beaches</a></li>
+            <li><a href="index.html#recommendations">Temples</a></li>
+            <li><a href="index.html#recommendations">Countries</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4>Contact</h4>
+          <div class="contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@travelvista.com
+          </div>
+          <div class="contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18a2 2 0 0 1 2-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +1 234 567 890
+          </div>
+          <div class="contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Adventure City, World
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TravelVista. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
