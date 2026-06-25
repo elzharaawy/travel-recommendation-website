@@ -12,7 +12,7 @@ A responsive travel recommendation web application that helps users discover pop
 - Temple Recommendations
 - Country Recommendations
 - Mobile-Friendly Design
-- GitHub Pages Deployment.
+- GitHub Pages Deployment
 
 ## Technologies Used
 - HTML5
